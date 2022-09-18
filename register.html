@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+            font-family: sans-serif
+            ;
+        }
+.hero{
+    height: 120%;
+width: 100%;
+background-image: url(./img/login1.jpg);
+background-position: center;
+background-size: 100%;
+position: absolute;
+}
+.form-box{
+width: 380px;
+height: 500px;
+position: relative;
+margin: 6% auto ;
+background:rgba(255, 255, 255, 0.879);
+padding: 5px;
+overflow: hidden;
+border-radius: 25px;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 25px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #3e9ed2;
+    border-radius: 30px;
+    transition: .5s;
+}
+.inputg{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 5px 0px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+margin: 20px  20px 60px;
+background: #3e9ed2;
+border: 0;
+outline: none;
+border-radius: 30px;
+}
+.checkbox{
+
+    margin: 30px 10px 30px 0;
+
+}
+span{
+    color: #777;
+    font-size: 18px;
+    bottom: 68px;
+   
+}
+#login{
+    left: 50px;
+
+}
+#register{
+    left: 450px;
+}
+#reg{
+    margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+    
+   
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">LOG IN</button>
+            <button type="button" class="toggle-btn" onclick="register()">REGISTER</button>   
+        </div>
+    
+    <form id="login" class="inputg">
+        <input type="text" class="input-field" name="userid" placeholder="USER ID" required>  
+        <input type="password" class="input-field" name="pass" placeholder="password" required>
+    <input type="checkbox" class="checkbox"><span>remember password</span>
+<button type="submit" class="submit-btn"> login</button>  </form>
+
+
+
+<form id="register" class="inputg">
+    <input type="text" class="input-field" name="userid" placeholder="USER ID" required> 
+    <input type="email" class="input-field" name="email" placeholder="EMAIL ID" required> 
+    <input type="password" class="input-field" name="pass" placeholder="password" required>
+    <input type="password" class="input-field" name="cpass" placeholder="re-enter password" required>
+        
+<input type="checkbox" class="checkbox" required><span>I agree to all terms </span>
+<button type="submit" class="submit-btn" id="reg"> Register</button>  </form>
+</div>
+</div>
+<!--java-->
+<script>
+var x=document.getElementById("login");
+    var y=document.getElementById("register");
+    var z=document.getElementById("btn");
+    function register(){
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="110px";
+        
+    }
+    function login(){
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0px";
+        
+    }
+</script>
+
+</body>
+</html>

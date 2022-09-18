@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{font-weight: 500;
+    display:block;
+    padding-left: 800px;
+    padding-top: 250px;
+}
+p{
+    font-size: 50px;
+    color: rgb(238, 20, 20);
+    border-color: none;
+    display: flex;
+}
+input{
+    font-size: large;
+    display: flex;
+    background-color: rgb(210, 218, 218);
+    transform:scaleZ(0.3s);
+    transition: 1s;
+}
